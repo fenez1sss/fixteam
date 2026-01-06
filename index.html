@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>FC 25 Career</title>
+    <style>
+        body {
+            margin: 0; padding: 0;
+            background: #000000; /* Глубокий черный */
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        /* Главная страница: ЦВЕТНАЯ (FC 25 Style) */
+        header {
+            width: 100%; height: 85vh;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.5), #000), 
+                        url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80');
+            background-size: cover; background-position: center;
+            text-align: center;
+        }
+
+        header h1 { 
+            font-size: 48px; font-weight: 900; margin: 0; 
+            font-style: italic; color: #00ff85; /* Тот самый зеленый */
+            text-transform: uppercase;
+        }
+        
+        .season-badge {
+            background: #00ff85; color: #000;
+            padding: 4px 12px; border-radius: 4px;
+            font-weight: 800; margin-top: 10px; font-size: 14px;
+        }
+
+        /* ПОСЛЕДУЮЩИЕ БЛОКИ: ЧЕРНО-БЕЛЫЕ */
+        .content-section {
+            width: 100%; max-width: 450px;
+            padding: 40px 20px; box-sizing: border-box;
+            background: #000;
+        }
+
+        .info-block {
+            border-top: 1px solid #333; /* Тонкая серая линия разделения */
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px; font-weight: 700;
+            text-transform: uppercase; margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 16px; line-height: 1.6;
+            color: #888; /* Серый текст для контраста */
+            margin-bottom: 20px;
+        }
+
+        .steps {
+            list-style: none; padding: 0;
+        }
+
+        .steps li {
+            font-size: 16px; margin-bottom: 12px;
+            display: flex; align-items: center;
+            color: #fff;
+        }
+
+        .steps li::before {
+            content: "—"; margin-right: 10px; color: #555;
+        }
+
+        /* Кнопка: ЧЕРНО-БЕЛАЯ */
+        .cta-button {
+            display: block; width: 100%;
+            background: #ffffff; color: #000000;
+            text-align: center; text-decoration: none;
+            padding: 20px; border-radius: 0; /* Прямые углы для стиля */
+            font-weight: 900; font-size: 16px;
+            text-transform: uppercase; letter-spacing: 1px;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+
+        .cta-button:active { opacity: 0.8; }
+
+        .footer {
+            padding: 60px 20px; font-size: 10px;
+            color: #333; text-transform: uppercase;
+            letter-spacing: 2px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FC 25 <br> FIX TEAM - CAREER</h1>
+    </header>
+
+    <div class="content-section">
+        
+        <div class="info-block">
+            <h2>О проекте</h2>
+            <p>Это не просто игра. Это полноценная карьера, где каждый игрок в составе — мой подписчик. Мы начинаем с создания клуба и идем к вершине мирового футбола.</p>
+        </div>
+
+        <div class="info-block">
+            <h2>Как попасть</h2>
+            <p>Для участия в текущем сезоне напиши мне в личные сообщения. Укажи следующие данные:</p>
+            <ul class="steps">
+                <li>Твой игровой ник (ID)</li>
+                <li>Основная позиция</li>
+                <li>Желаемый номер</li>
+                <li>Скриншот твоего скилла</li>
+            </ul>
+        </div>
+
+        <a href="https://t.me/@Fix_Tag" class="cta-button">Написать в Telegram</a>
+
+        <div class="footer">
+             Fix • 2026
+        </div>
+    </div>
+
+</body>
+</html>
